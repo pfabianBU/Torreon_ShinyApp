@@ -1,4 +1,7 @@
-
+#Created by: Flannery Black Ingersoll
+#Purpose: creat RShiny app that shows hourly and 15 minute values of PM2.5, temp, RH, PM10 collected from IAQAir samplers installed in Torreon
+#Date created: March, 2022
+#Last updated: July 19, 2022
 
 
 library(shinythemes)
@@ -8,6 +11,7 @@ library(stringr)
 library(leaflet)
 library(plotly)
 library(DT)
+## only file locations need to be change to run program
 ozona_hr <- readRDS("data/hourly_outside_zona2Tue_Jul_19.rds")
 ozona <- readRDS("data/instant_outside_zona2Tue_Jul_19.rds")
 izona_hr <- readRDS("data/hourly_inside_zona2Tue_Jul_19.rds")
